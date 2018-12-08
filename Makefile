@@ -75,7 +75,6 @@ publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 github: publish
-
   ghp-import -n $(OUTPUTDIR)
   @git push -fq https://${GH_TOKEN}@github.com/$(pelican-ghp).git gh-pages > /dev/null
 
