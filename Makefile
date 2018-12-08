@@ -76,6 +76,6 @@ publish:
 
 github: publish
 	ghp-import -n $(OUTPUTDIR)
-	@git push -fq https://${GH_TOKEN}@github.com/pelican-ghp.git gh-pages > /dev/ null
+	@git push -fq https://${GH_TOKEN}@github.com/pelican-ghp.git gh-pages > /dev/null
 
 .PHONY: html help clean regenerate serve serve-global devserver stopserver publish github
